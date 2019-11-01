@@ -1,0 +1,31 @@
+﻿<Window x:Class="prova.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prova"
+        mc:Ignorable="d"
+        Title="Escola de idomas" Height="450" Width="800">
+    <Grid Height="419" VerticalAlignment="Bottom">
+        <GroupBox Header="Nova turma" Margin="5">
+            <Grid>
+                <TextBox Name="Disciplina" Height="20" Width="400" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Text="Disciplina" Margin="10,35,0,0"/>
+                <TextBox Name="Aluno" Height="20" Width="400" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Text="Aluno" Margin="10,83,0,0"/>
+            </Grid>
+
+        </GroupBox>
+
+        <Button Height="20" Width="66" Content="Inserir" HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Click="CalcularClick2" Margin="25,167,0,0"/>
+        <Button Height="20" Width="66" Content="Listar" HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Click="CalcularClick3" Margin="125,167,0,0"/>
+        <Button Height="20" Width="66" Content="Criar turma" HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Click="CalcularClick4" Margin="227,167,0,0"/>
+
+
+        <ListBox x:Name="list" Margin="25,244,147,39" />
+
+    </Grid>
+</Window>
